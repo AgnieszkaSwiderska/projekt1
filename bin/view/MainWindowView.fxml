@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWindowController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="479.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@enigma.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="28.0" text="ENIGMA" textFill="#b9d068">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="94.0" text="Początkowe ustawienie bębnów:" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="124.0" text="bęben 1:" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="b1Lab" layoutX="96.0" layoutY="124.0" text="00" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="b2Lab" layoutX="207.0" layoutY="124.0" text="00" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="b3Lab" layoutX="319.0" layoutY="124.0" text="00" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="129.0" layoutY="124.0" text="bęben 2:" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="124.0" text="bęben 3:" textFill="#c6d3ad">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="oryginText" layoutX="20.0" layoutY="216.0" prefHeight="200.0" prefWidth="327.0" />
+      <TextArea fx:id="zakodText" layoutX="359.0" layoutY="216.0" prefHeight="200.0" prefWidth="327.0" />
+      <Label layoutX="55.0" layoutY="178.0" text="Tekst oryginalny:" textFill="#c6d3ad">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="178.0" text="Tekst zakodowany:" textFill="#c6d3ad">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="57.0" layoutY="437.0" mnemonicParsing="false" onAction="#wczytajButton" text="Wczytaj z pliku" />
+      <Button layoutX="523.0" layoutY="437.0" mnemonicParsing="false" onAction="#zakodujButton" text="Zakoduj" />
+      <Label fx:id="licz1Lab" layoutX="202.0" layoutY="418.0" text="000">
+         <textFill>
+            <LinearGradient endX="0.024271844660194143" endY="0.9563106796116505">
+               <stops>
+                  <Stop color="#251313" />
+                  <Stop color="#f5f3f3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="licz2Lab" layoutX="309.0" layoutY="418.0" text="000">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.024271844660194143" endY="0.9563106796116505">
+               <stops>
+                  <Stop color="#251313" />
+                  <Stop color="#f5f3f3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="licz3Lab" layoutX="419.0" layoutY="418.0" text="000">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.024271844660194143" endY="0.9563106796116505">
+               <stops>
+                  <Stop color="#251313" />
+                  <Stop color="#f5f3f3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
